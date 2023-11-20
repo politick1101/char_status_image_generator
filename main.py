@@ -2,11 +2,15 @@ from PIL import Image, ImageDraw
 
 from fonts import *
 
+from functions import draw_text_with_shadow
+
 
 def draw_image_tag(image: Image.Image, tag: str) -> Image.Image:
-    draw = ImageDraw.Draw(image)
-    draw.text((10, 10), tag, font=tt_font(CS_MS_PIXEL, 40), fill=(0, 0, 0))
+    draw_text_with_shadow(image, tag, 20, 40, width=10, font_size=50)
+    # draw = ImageDraw.Draw(image)
+
     return image
+
 
 avatar = Image.open("images/avatars/avito_link.png")
 tag = 'AvitoLink2014'
