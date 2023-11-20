@@ -5,8 +5,8 @@ from PIL import Image
 from functions import scale_image_up
 
 # # Preparing bigger versions of images.
-# source = 'resources_and_licenses/avatars/'
-# result = 'images/avatars/'
+# source = 'avatars/'
+# result = '../images/avatars/'
 #
 # for filename in os.listdir(source):
 #     image = Image.open(source + filename)
