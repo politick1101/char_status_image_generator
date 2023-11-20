@@ -5,7 +5,7 @@ from fonts import *
 
 def draw_image_tag(image: Image.Image, tag: str) -> Image.Image:
     draw = ImageDraw.Draw(image)
-    draw.text((10, 10), tag, font=CS_MS_PIXEL_font, fill=(0, 0, 0))
+    draw.text((10, 10), tag, font=tt_font(CS_MS_PIXEL, 40), fill=(0, 0, 0))
     return image
 
 avatar = Image.open("images/avatars/avito_link.png")

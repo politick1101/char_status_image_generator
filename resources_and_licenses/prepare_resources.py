@@ -4,15 +4,15 @@ from PIL import Image
 
 from functions import scale_image_up
 
-# # Preparing bigger versions of images.
-# source = 'avatars/'
-# result = '../images/avatars/'
-#
-# for filename in os.listdir(source):
-#     image = Image.open(source + filename)
-#
-#     scaled_image = scale_image_up(image, 8)
-#     scaled_image.save(result + filename)
+# Preparing bigger versions of images.
+source = 'avatars/'
+result = '../images/avatars/'
+
+for filename in os.listdir(source):
+    image = Image.open(source + filename)
+
+    scaled_image = scale_image_up(image, 8)
+    scaled_image.save(result + filename)
 
 # # crop out food icon
 # width, height = 16, 16

@@ -1,9 +1,12 @@
 from PIL import ImageFont
 
-# size for all fonts
-size = 30
+
+def tt_font(name: str, size: int)->ImageFont:
+    """Wrapper over ImageFont.truetype"""
+    return ImageFont.truetype(name, size)
+
 
 # Initialising fonts
-BETTER_VCR_font = ImageFont.truetype("fonts/better-vcr5.1.ttf", size)
-CS_MS_PIXEL_font = ImageFont.truetype("fonts/Comic Sans MS Pixel.ttf", size)
-PSY_FORCE_MONOSPACED_font = ImageFont.truetype("fonts/PsychicForce2012Monospaced.otf", size)
+BETTER_VCR = "fonts/better-vcr5.1.ttf"
+CS_MS_PIXEL = "fonts/Comic Sans MS Pixel.ttf"
+PSY_FORCE_MONOSPACED = "fonts/PsychicForce2012Monospaced.otf"
